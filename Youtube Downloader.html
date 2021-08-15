@@ -12,13 +12,13 @@
     <div class="card">
       <div class="card-header bg-info">
         <h2>YouTube Downloader</h2>
-		<h5>Ignore the redirects it is sadly part of an open source api</h5>
       </div>
       <div class="card-body">
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
               <label class="text-weight"><b>YouTube Video Link:</b></label>
+			  <br>
               <input type="txt" name="link" class="form-control link" required>
             </div>
           </div>
@@ -27,6 +27,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
+			  <br>
                 <label class="text-weight"><b>Select Video Format:</b></label>
                 <select class="form-control formte" required>
                   <option selected disabled>Select Video Format</option>
@@ -37,9 +38,7 @@
                   <option value="720">720 Mp4</option>
                   <option value="1080">1080 Mp4</option>
                   <option value="4k">4k Mp4</option>
-                  <option value="8k">8k Mp4</option>
-				  
-				  
+                  <option value="8k">8k Mp4</option>  
                 </select>
               </div>
             </div>
@@ -47,7 +46,29 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group mt- download-video">
-                <button class="btn btn-success btn-block click-btn-down" type="submit">Convert</button>
+			  <br>
+                <button class="btn btn-success btn-block click-btn-down" type="submit">Convert</button>	
+				<br>
+				<div class="disclaimer">
+					<h1> Disclaimer </h1>
+						<p>Downloading videos from YouTube is against the YouTube Policy.
+						   The only videos that your allowed to download is
+						   your own which you can already do
+						   using YouTube Studio.</p>
+						   
+							<script type="css"> 
+							.disclaimer {
+								position:fixed;
+								width:100%;
+								left:0;
+								bottom:0;
+								}
+					.disclaimer p {
+								  text-align:center;
+								  }	
+				</script>
+				<h1> Note </h1>
+				<p> Ignore the redirects it is sadly part of an open source api </p>
               </div>
             </div>
           </div>
@@ -55,6 +76,7 @@
       </div>
     </div>
   </div>
+</div>
 </body>
 <script type="text/javascript">
   $(".click-btn-down").click(function(){
